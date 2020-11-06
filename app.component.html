@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+   
+  <span>Welcome to Restaurants World</span>
+  <span class="example-spacer"></span>
+ 
+</mat-toolbar>
+<mat-list>
+
+  <mat-list-item  *ngFor="let x of rest">
+   {{x.name}}
+   <span class="example-spacer"></span>
+   <button mat-flat-button color="accent" routerLink={{x.link}}>Show more</button>
+  </mat-list-item>
+  
+</mat-list>
+<router-outlet></router-outlet>
